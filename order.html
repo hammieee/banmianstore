@@ -149,14 +149,14 @@ Set D
 几份 Quantity :
 
 (长豆 Long Bean, 羊角豆 Okra, 辣椒 Chili, 茄子 Eggplant, 豆腐 Tofu, 豆卜 Bean Curd)</textarea><br/>
-					<button onclick="myFunction()">拷贝 Copy</button>
-					<button formaction='https://wa.me/6598797378?text=把你刚才复制的粘贴进来 Paste what you have just copied' target="_blank">现在订购 Order Now!</a>
+					<button onclick="myFunction()">现在订购! Order Now！</button>
 					<script>
 						function myFunction() {
 						  var copyText = document.getElementById("order");
 						  copyText.select();
 						  copyText.setSelectionRange(0, 99999)
 						  document.execCommand("copy");
+						  window.open("https://wa.me/6598797378?text=把你刚才复制的粘贴进来 Paste what you have just copied", "_blank"); 
 						}
 					</script>
 
